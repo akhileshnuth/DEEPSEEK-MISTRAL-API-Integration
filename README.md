@@ -9,6 +9,9 @@ Hiringhood Intelligent Workspace is a full-stack AI chat system built with:
 - **LLM Provider:** Mistral
 - **Features:** formatting styles, scroll-to-bottom button, auto-resizing input, CLI support, logging, secure .env config.
 
+## Live App
+**Frontend:** https://deepseek-mistral-api-integration.onrender.com/
+
 ## Project Structure
 ```
 project-root/
