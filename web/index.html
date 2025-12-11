@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hiringhood Intelligent Workspace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Markdown parser and sanitizer -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-inner">
+          <div class="header-center">
+            <h1>Hiringhood Intelligent Workspace</h1>
+            <p>Where your thoughts evolve into ideas, insights, and solutions.</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Chat Window -->
+      <main id="chatWindow" class="chat-window" aria-live="polite"></main>
+
+      <!-- Scroll to bottom button -->
+      <div id="scrollDownBtn" class="scroll-down-btn">↓</div>
+
+      <!-- Footer -->
+      <form id="chatForm" class="chat-form" autocomplete="off">
+        <label for="formatStyle" class="footer-format">
+          <span class="format-text">Response format:</span>
+          <select id="formatStyle">
+            <option value="plain">Plain</option>
+            <option value="bullets">Bullets</option>
+            <option value="numbered">Numbered</option>
+          </select>
+        </label>
+
+        <textarea
+          id="userInput"
+          placeholder="Type your message..."
+          rows="1"
+        ></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
