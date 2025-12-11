@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: hiringhood-intelligent-workspace
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn src.web_app:app"
+    plan: starter
+    envVars:
+      - key: MISTRAL_API_KEY
+        sync: false
+      - key: LLM_MODEL
+        value: mistral-small-latest
+      - key: API_TIMEOUT
+        value: "30"
+      - key: LOG_FILE
+        value: logs/app.log
