@@ -8,7 +8,7 @@ from .utils import build_system_message
 
 
 def run_cli() -> None:
-    setup_logging()
+    setup_logging() 
     logger = logging.getLogger(__name__)
     client = ChatClient()
 

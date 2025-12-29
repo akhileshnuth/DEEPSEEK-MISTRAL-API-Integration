@@ -17,7 +17,6 @@ setup_logging()
 logger = logging.getLogger(__name__)
 client = ChatClient()
 
-
 def ensure_system_message(
     messages: List[Dict[str, str]], format_style: str
 ) -> List[Dict[str, str]]:
@@ -33,9 +32,9 @@ def ensure_system_message(
 def index() -> Any:
     return send_from_directory(app.static_folder, "index.html")
 
-
-@app.route("/api/chat", methods=["POST"])
-def api_chat() -> Any:
+# Flask receives the POST request
+@app.route("/api/chat", methods=["POST"]) # This means Flask is waiting for POST requests at /api/chat. 
+def api_chat() -> Any:  # This function handles the POST request. Then Flask extracts: All messages, Formatting style (plain, bullets, numbered), Then it prepares them for the AI.
     try:
         data = request.get_json(force=True) or {}
     except Exception:

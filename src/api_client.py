@@ -78,6 +78,7 @@ class ChatClient:
             # Do not log headers/payload with secrets in production logs; keep debug minimal
             logger.debug("Payload keys: %s", list(payload.keys()))
 
+            # Flask forwards the messages to Mistral AI (This is the actual API integration.)
             response = self.session.post(
                 url,
                 headers=headers,

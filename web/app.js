@@ -113,6 +113,8 @@ chatForm.addEventListener("submit", async event => {
   userInput.focus();
   setSending(true);
 
+  /* The frontend sends chat messages using POST */
+  /* When the user clicks Send, the JS code sends a POST request to Flask (This is the API call from frontend backend.) */
   try {
     const response = await fetch("/api/chat", {
       method: "POST",
