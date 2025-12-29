@@ -1,9 +1,9 @@
-# Hiringhood Intelligent Workspace
+# Akhil's Intelligent Workspace
 
 A clean, modern, customizable AI chat application with selectable formatting, scroll‑to‑bottom UI behavior, a Flask backend, and a Mistral-powered API integration.
 
 ##  Overview
-Hiringhood Intelligent Workspace is a full-stack AI chat system built with:
+Akhil's Intelligent Workspace is a full-stack AI chat system built with:
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Flask (Python)
 - **LLM Provider:** Mistral
